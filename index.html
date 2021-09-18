@@ -138,9 +138,41 @@ body, html {
 
 
 
+
+
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+#animate-area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(https://suneinyneeenan.github.io/Music/32note.svg);
+  background-position: center;
+
+
+  animation: animatedBackground 10s linear infinite alternate;
+  z-index: -1;
+
+
+
+
+}
+
+
+
+
+
 </style>
 
 
+<div id="animate-area" ></div>
 
 
 <!-- FONT API's -->
